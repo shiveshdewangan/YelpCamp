@@ -34,8 +34,8 @@ app.use(function(req, res, next){
     next();
 });
 
-//mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://shiveshdewangan:Sapient@123@ds123331.mlab.com:23331/yelpcampdb");
+mongoose.connect("mongodb://localhost:27017/yelp_camp");
+//mongoose.connect("mongodb://shiveshdewangan:Sapient@123@ds123331.mlab.com:23331/yelpcampdb");
 //mongodb://shiveshdewangan:Sapient@123@ds123331.mlab.com:23331/yelpcampdb
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
